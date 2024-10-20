@@ -13,7 +13,7 @@ const LineChart = ({ chartData }) => {
                 position: 'top',
             },
             title: {
-                display: true,
+                display: false,
                 text: 'Stock Price Chart',
             },
         },
