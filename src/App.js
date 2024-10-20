@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {BrowserRouter as Router, Navigate, Route, Routes} from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
 import CompanyPage from './components/Pages/CompanyPage/CompanyPage';
