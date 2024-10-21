@@ -5,3 +5,12 @@
 body{
     background-color: #dadada;
 }
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+html {
+    scrollbar-width: none;
+}

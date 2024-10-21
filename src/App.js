@@ -5,9 +5,16 @@ import CompanyPage from './components/Pages/CompanyPage/CompanyPage';
 import HomePage from './components/Pages/Home/HomePage';
 import AboutPage from './components/Pages/About/AboutPage';
 import PortfolioPage from "./components/Pages/Portfolio/PortfolioPage";
+import Footer from "./components/footer/Footer";
+import PrivacyTermsPage from "./components/Pages/PrivacyTerms/PrivacyTermsPage";
+import ContactPage from "./components/Pages/Contact/ContactPage";
 
 function App() {
-    const handleLinkClick = () => {};
+    const links = [
+        { label: 'Privacy Policy', to: '/privacy-policy' },
+        { label: 'Terms of Service', to: '/terms-of-service' },
+        { label: 'Contact Us', to: '/contact-us' },
+    ];
 
     return (
         <Router>
@@ -16,16 +23,24 @@ function App() {
                     logo="TraderKek"
                     links={['Home', 'About', 'Portfolio']}
                     styleType="black"
-                    onLinkClick={handleLinkClick}
                 />
+
                 <Routes>
                     <Route path="/" element={<HomePage />} />
                     <Route path="/about" element={<AboutPage />} />
                     <Route path="/portfolio" element={<PortfolioPage />} />
                     <Route path="/company/:ticker" element={<CompanyPage />} />
-
+                    <Route path="/privacy-policy" element={<PrivacyTermsPage />} />
+                    <Route path="/terms-of-service" element={<PrivacyTermsPage />} />
+                    <Route path="/contact-us" element={<ContactPage />} />
                     <Route path="*" element={<Navigate to="/" />} />
                 </Routes>
+
+                <Footer
+                    text="© 2024 Company. All rights reserved."
+                    links={links}
+                    styleType="black"
+                />
             </div>
         </Router>
     );

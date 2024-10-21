@@ -1,9 +1,14 @@
 import React from 'react';
+import Hero from "./Hero";
+import AnalysisTypes from "./AnalysisTypes";
+import AIBlock from "./AIBlock";
 
 const HomePage = () => {
     return (
         <div>
-            <h1>Welcome to the Home Page</h1>
+            <Hero/>
+            <AnalysisTypes />
+            <AIBlock />
         </div>
     );
 };

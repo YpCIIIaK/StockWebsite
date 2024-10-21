@@ -9,7 +9,6 @@ const Navbar = ({ links, logo, styleType = 'black', onLinkClick }) => {
     const stockOptions = [
         { name: 'Apple', ticker: 'AAPL' },
         { name: 'Chevron', ticker: 'CVX' },
-        // Добавьте другие компании
     ];
 
     const handleSearchChange = (e) => {
