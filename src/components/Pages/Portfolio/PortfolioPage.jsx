@@ -1,10 +1,12 @@
 import React from 'react';
+import TextComponent from "../../text/TextComponent";
 
 const PortfolioPage = () => {
     return (
         <div>
-            <h1>Portfolio</h1>
-            <p>This is a portfolio page</p>
+            <TextComponent styleType='black' size='xl4'>
+                Portfolio Page
+            </TextComponent>
         </div>
     );
 };

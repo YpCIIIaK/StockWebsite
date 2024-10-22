@@ -1,10 +1,12 @@
 import React from 'react';
+import TextComponent from "../../text/TextComponent";
 
 const AboutPage = () => {
     return (
         <div>
-            <h1>About TraderKek</h1>
-            <p>This platform is dedicated to stock trading and financial information.</p>
+            <TextComponent styleType='black' size='xl4'>
+                About Page
+            </TextComponent>
         </div>
     );
 };
