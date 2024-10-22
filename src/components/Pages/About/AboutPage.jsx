@@ -42,7 +42,7 @@ const AboutPage = () => {
                         <strong className='mr-1'>Role:</strong>FullStack React Developer
                     </TextComponent>
                     <p className="text-gray-600 mt-2">
-                        Vladimir is the developer behind the design and structure of TraderKek, ensuring a seamless user
+                        The developer behind the design and structure of TraderKek, ensuring a seamless user
                         experience built with React.js and cutting-edge front-end technologies.
                     </p>
                 </div>
