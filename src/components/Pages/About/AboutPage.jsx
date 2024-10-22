@@ -14,25 +14,25 @@ const AboutPage = () => {
             </div>
 
             <div className="flex flex-col md:flex-row justify-around items-center w-full max-w-4xl space-y-6 md:space-y-0 md:space-x-6">
-                <div className="bg-white shadow-md rounded-lg p-6 w-full md:w-1/2 text-center">
+                <div className="bg-white shadow-md rounded-lg p-6 w-full md:w-1/2">
                     <TextComponent styleType="black" size="xl2">
                         React Specialist
                     </TextComponent>
-                    <p className="text-gray-600 mt-2">
-                        <strong>Role:</strong> FullStack React Developer
-                    </p>
+                    <TextComponent styleType='black' size='md'>
+                        <strong className='mr-1'>Role:</strong>FullStack React Developer
+                    </TextComponent>
                     <p className="text-gray-600 mt-2">
                         Vladimir is the developer behind the design and structure of TraderKek, ensuring a seamless user experience built with React.js and cutting-edge front-end technologies.
                     </p>
                 </div>
 
-                <div className="bg-white shadow-md rounded-lg p-6 w-full md:w-1/2 text-center">
+                <div className="bg-white shadow-md rounded-lg p-6 w-full md:w-1/2">
                     <TextComponent styleType="black" size="xl2">
                         Python Specialist
                     </TextComponent>
-                    <p className="text-gray-600 mt-2">
-                        <strong>Role:</strong> AI Developer
-                    </p>
+                    <TextComponent styleType='black' size='md'>
+                        <strong className='mr-1'>Role:</strong>AI Developer
+                    </TextComponent>
                     <p className="text-gray-600 mt-2">
                         The mastermind behind the AI powering TraderKek. He designed a powerful machine learning model that analyzes stock data to provide insightful and fast recommendations.
                     </p>
