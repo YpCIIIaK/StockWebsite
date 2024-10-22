@@ -5,7 +5,7 @@ import Input from "../../input/Input";
 
 const ContactPage = () => {
     return (
-        <div className='flex flex-col justify-center items-center bg-gray-100 p-24'>
+        <div className='flex flex-col justify-center items-center bg-gray-100 p-24 pb-28'>
             <div className='text-center mb-10'>
                 <TextComponent styleType='black' size='xl4'>
                     Contact Us
