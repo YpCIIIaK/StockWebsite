@@ -4,7 +4,7 @@ import TextComponent from "../../text/TextComponent";
 
 const AIBlock = () => {
     return (
-        <div className="bg-white py-12">
+        <div className="h-[350px] bg-white py-12 flex items-center justify-center">
             <div className="max-w-5xl mx-auto px-6 text-center">
                 <div className="flex items-center justify-center mb-6">
                     <FaRobot className="text-6xl mr-4 text-black" />
