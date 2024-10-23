@@ -9,6 +9,8 @@ import Footer from "./components/footer/Footer";
 import PrivacyTermsPage from "./components/Pages/PrivacyTerms/PrivacyTermsPage";
 import ContactPage from "./components/Pages/Contact/ContactPage";
 import Overview from "./components/Pages/Portfolio/Overview";
+import Register from "./components/Pages/register-login/Register";
+import LogIn from "./components/Pages/register-login/LogIn";
 
 function App() {
     const links = [
@@ -36,6 +38,8 @@ function App() {
                     <Route path="/privacy-policy" element={<PrivacyTermsPage />} />
                     <Route path="/terms-of-service" element={<PrivacyTermsPage />} />
                     <Route path="/contact-us" element={<ContactPage />} />
+                    <Route path="/register" element={<Register />} />
+                    <Route path="/login" element={<LogIn />} />
                     <Route path="*" element={<Navigate to="/" />} />
                 </Routes>
 
