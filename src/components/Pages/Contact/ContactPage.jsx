@@ -17,7 +17,7 @@ const ContactPage = () => {
 
             <div className='flex justify-center items-stretch w-full max-w-5xl space-x-6'>
                 <form className='flex flex-col justify-center items-center shadow-md rounded-lg p-8 w-1/2 bg-white'>
-                    <div className='mb-4 w-full'>
+                    <div className='w-full'>
                         <Input
                             styleType='black'
                             size='xl1'
