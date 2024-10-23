@@ -8,16 +8,18 @@ const Hero = () => {
             <TextComponent styleType='black' size='xl4' className='mb-4'>
                 Analyze the Shares
             </TextComponent>
-            <TextComponent styleType='black' size='lg' className='text-center max-w-2xl text-gray-700 mb-8'>
+            <TextComponent styleType='black' size='lg'>
                 Don't miss the opportunity for a deep, multi-level analysis of shares using powerful AI algorithms.
             </TextComponent>
-            <Button
-                styleType='black'
-                size='md'
-                onClick={() => alert('Get Started!')}
-            >
-                Get Started
-            </Button>
+            <div className='mt-4'>
+                <Button
+                    styleType='black'
+                    size='md'
+                    onClick={() => alert('Get Started!')}
+                >
+                    Get Started
+                </Button>
+            </div>
         </div>
     );
 };
