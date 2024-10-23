@@ -95,10 +95,10 @@ const Navbar = ({ links, logo, styleType = 'black', onLinkClick }) => {
                 ) : (
                     <Button
                         styleType="white"
-                        size="smmd"
+                        size="sm"
                         onClick={() => navigate('/register')}
                     >
-                        Регистрация
+                        Register
                     </Button>
                 )}
             </div>

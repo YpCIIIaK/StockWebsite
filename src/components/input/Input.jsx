@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Input = ({
-                   type = 'text',  // Добавляем пропс type
+                   type = 'text',
                    styleType = 'black',
                    placeholder,
                    onChange,
