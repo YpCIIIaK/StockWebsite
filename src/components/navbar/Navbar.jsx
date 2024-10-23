@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import MiniProfile from "../miniProfile/MiniProfile";
+import Button from "../buttons/Button";
 
 const Navbar = ({ links, logo, styleType = 'black', onLinkClick }) => {
     const [searchQuery, setSearchQuery] = useState('');
     const [suggestions, setSuggestions] = useState([]);
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
     const navigate = useNavigate();
 
     const stockOptions = [
@@ -17,7 +20,8 @@ const Navbar = ({ links, logo, styleType = 'black', onLinkClick }) => {
 
         if (query.length > 0) {
             const filteredSuggestions = stockOptions.filter((option) =>
-                option.name.toLowerCase().includes(query.toLowerCase()) || option.ticker.toLowerCase().includes(query.toLowerCase())
+                option.name.toLowerCase().includes(query.toLowerCase()) ||
+                option.ticker.toLowerCase().includes(query.toLowerCase())
             );
             setSuggestions(filteredSuggestions);
         } else {
@@ -36,10 +40,9 @@ const Navbar = ({ links, logo, styleType = 'black', onLinkClick }) => {
             navigate('/');
         } else if (link.toLowerCase() === 'about') {
             navigate('/about');
+        } else if (link.toLowerCase() === 'portfolio') {
+            navigate('/portfolio');
         }
-        else if (link.toLowerCase() === 'portfolio') {
-        navigate('/portfolio');
-    }
     };
 
     const baseStyles = 'flex items-center justify-between p-4';
@@ -86,6 +89,18 @@ const Navbar = ({ links, logo, styleType = 'black', onLinkClick }) => {
                         </ul>
                     )}
                 </div>
+
+                {isLoggedIn ? (
+                    <MiniProfile username="Vladimir" />
+                ) : (
+                    <Button
+                        styleType="white"
+                        size="smmd"
+                        onClick={() => navigate('/register')}
+                    >
+                        Регистрация
+                    </Button>
+                )}
             </div>
         </nav>
     );

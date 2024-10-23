@@ -9,10 +9,11 @@ const Button = ({
                     iconPosition = 'left',
                     disabled
             }) => {
-    const baseStyles = 'rounded-lg text-center font-medium py-2 px-4 my-2 transition-all flex items-center justify-center';
+    const baseStyles = 'rounded-lg text-center font-medium py-1 px-4 transition-all flex items-center justify-center';
 
     const sizeStyles = {
         sm: 'w-[100px]',
+        smmd: 'w-[150px]',
         md: 'w-[200px]',
         lg: 'w-[300px]',
         xl1: 'w-[400px]',

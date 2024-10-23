@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Input = ({
+                   type = 'text',  // Добавляем пропс type
                    styleType = 'black',
                    placeholder,
                    onChange,
@@ -29,13 +30,8 @@ const Input = ({
 
     return (
         <div className={`relative ${disabled ? 'opacity-50 cursor-not-allowed' : ''}`}>
-            {/*{icon && iconPosition === 'left' && (*/}
-            {/*    <div className="absolute left-3 top-1/2 transform -translate-y-1/2 flex items-center">*/}
-            {/*        {icon}*/}
-            {/*    </div>*/}
-            {/*)}*/}
             <input
-                type="text"
+                type={type}
                 className={`${baseStyles} ${sizeStyles[size]} ${styleTypes[styleType]} ${icon ? (iconPosition === 'left' ? '' : '') : ''}`}
                 placeholder={placeholder}
                 onChange={onChange}
@@ -43,11 +39,6 @@ const Input = ({
                 onBlur={onBlur}
                 disabled={disabled}
             />
-            {/*{icon && iconPosition === 'right' && (*/}
-            {/*    <div className="absolute right-3 top-1/2 transform -translate-y-1/2 flex items-center">*/}
-            {/*        {icon}*/}
-            {/*    </div>*/}
-            {/*)}*/}
         </div>
     );
 };
